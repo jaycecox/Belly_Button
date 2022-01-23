@@ -3,7 +3,8 @@ function init() {
   var selector = d3.select("#selDataset");
 
   // Use the list of sample names to populate the select options
-  d3.json("samples.json").then((data) => {
+  d3.json("./static/data/samples.json").then((data) => {
+    console.log(data);
     var sampleNames = data.names;
 
     sampleNames.forEach((sample) => {
@@ -71,7 +72,7 @@ function buildCharts(sample) {
     // Hint: Get the the top 10 otu_ids and map them in descending order  
     //  so the otu_ids with the most bacteria are last. 
 
-    var yticks = 
+   // var yticks = 
 
     // 8. Create the trace for the bar chart. 
     var barData = [
