@@ -122,7 +122,7 @@ function buildCharts(sample) {
     var bubbleData = [
       {
         x: otu_ids,
-        y: sample_values.slice(0, 10),
+        y: sample_values,
         text: otu_labels,
         mode: "markers",
         marker: {
